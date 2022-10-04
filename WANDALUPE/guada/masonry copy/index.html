@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Masonry example · Bootstrap v5.2</title>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        /*MENU*/
+      }
+header{
+margin:-3em;
+margin-left: -4.1em;
+margin-right: -4.1em;
+background-color: rgb(47, 47, 47);
+
+}
+
+#menu {
+display: flex;
+margin: auto;
+margin-top: 1em;
+ margin-bottom: 1em;
+
+
+
+}
+
+
+
+
+
+#menu #desple {
+background-color: rgb(47, 47, 47);
+padding-top: 1em;
+padding-bottom: 0.5em;
+border-radius: 20px;
+width: 170px;
+
+
+display: none;
+margin: 0em 0em 0em -1.7em;
+
+}
+
+a{
+  color: aliceblue;
+}
+a:hover{
+  color: bisque;
+}
+
+
+#menu .item #desple a {
+font-size: small;
+margin-top: -0.5em;
+margin: auto;
+ margin-bottom: 20em;
+
+}
+
+
+
+
+
+#menu .item:hover #desple {
+display: block;
+position: absolute;/* cuando este en modo mobile borrar esta caract*/
+
+
+}
+
+#menu .item a {
+font-size: medium;
+margin-right: 1%;
+margin-left: 1%;
+margin-top: 0.3em;
+ 
+
+
+}
+
+ul {
+list-style: none;
+list-style: none;
+justify-content: center;
+
+
+
+}
+
+a {
+text-decoration: none;
+
+
+
+
+
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<main class="container py-4">
+  <header  class="site-header sticky-top py-1" id="site">
+    <ul id="menu"  class="container d-flex flex-column flex-md-row justify-content-between">
+
+        <li class="item"><a href="../1_home/mama.html">HOME</a>
+          <ul id="desple">
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#ubicacion">UBICACION</a></li>
+          </ul>
+        </li>
+
+
+        <li class="item"><a href="../2_clases/clases.html">CLASES</a>
+          <ul id="desple">
+            <li><a href="../2_clases/clases.html#precios">PRECIOS</a></li>
+          
+            <li><a href="../2_clases/clases.html#opi">OPINIONES</a></li>
+          </ul>
+        </li>
+
+
+        <li class="item"><a href="../3_tratamiento/tratamiento.html">TRATAMIENTO</a>
+          <ul id="desple">
+            <li><a href="../3_tratamiento/dolorlumbar/dolorlumbar.html">LUMBAR</a></li>
+            <li><a href="../3_tratamiento/dolorcervical/dolorcervical.html">CERVICAL</a></li>
+            <li><a href="../3_tratamiento/dolorcabeza/dolorcabeza.html">CABEZA</a></li>
+            <li><a href="../3_tratamiento/dolorpies/dolorpies.html">PIES</a></li>
+            <li><a href="../3_tratamiento/dolormandibula/dolormandibula.html">MANDIBULA</a></li>
+          </ul>
+        </li>
+
+
+        <li class="item"><a href="../4_productos/productos.html">PRODUCTOS</a>
+          <ul id="desple">
+            <li><a href="../4_productos/productos.html#rostro">ROSTRO</a></li>
+            <li><a href="../4_productos/productos.html#cuerpo">CUERPO</a></li>
+            <li><a href="../4_productos/productos.html#manos">MANOS</a></li>
+          </ul>
+        </li>
+
+        <li class="item"><a href="../5_aprende/juego.html">APRENDE</a> </li>
+        <li class="item"><a href="../6_info_alumna/alumna.html">INFO.ALUMNA</a> </li>
+
+      </ul>
+    </nav>
+	</header>
+
+  <hr class="my-5">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm- col-lg-5 mb-2">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" max-width="248px" height="351px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: OOO" preserveAspectRatio="xMidYMid slice" focusable="false"><title>OOOO</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">hola</text></svg>
+
+        
+      </div>
+    </div>
+
+ 
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" width="351px" height="248px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: HOLA" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+       
+      </div>
+    </div>
+    
+    
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img" width="351px" height="248px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+
+      </div>
+    </div>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm- col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top"max-width="240px" max-height="351" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: OOO" preserveAspectRatio="xMidYMid slice" focusable="false"><title>OOOO</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+        
+      </div>
+    </div>
+
+ 
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img-top" width="351px" height="248px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: HOLA" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+       
+      </div>
+    </div>
+    
+    
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card">
+        <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+
+      </div>
+    </div>
+   
+   
+</main>
+<hr>
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Cool stuff</a></li>
+        <li><a class="link-secondary" href="#">Random feature</a></li>
+        <li><a class="link-secondary" href="#">Team feature</a></li>
+        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        <li><a class="link-secondary" href="#">Another one</a></li>
+        <li><a class="link-secondary" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Resource name</a></li>
+        <li><a class="link-secondary" href="#">Resource</a></li>
+        <li><a class="link-secondary" href="#">Another resource</a></li>
+        <li><a class="link-secondary" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Business</a></li>
+        <li><a class="link-secondary" href="#">Education</a></li>
+        <li><a class="link-secondary" href="#">Government</a></li>
+        <li><a class="link-secondary" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Team</a></li>
+        <li><a class="link-secondary" href="#">Locations</a></li>
+        <li><a class="link-secondary" href="#">Privacy</a></li>
+        <li><a class="link-secondary" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  </body>
+</html>
